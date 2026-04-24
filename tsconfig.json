@@ -1,26 +1,28 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "checkJs": true,
+    "declaration": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "jsx": "react",
-    "lib": ["ESNext", "dom"],
-    "target": "es5",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "noEmit": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": false,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noImplicitReturns": true,
     "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "types": ["jest", "node"],
-    "paths": {
-      "react-location": ["./packages/react-location"],
-      "react-location-simple-cache": ["./packages/react-location-simple-cache"],
-      "react-location-rank-routes": ["./packages/react-location-rank-routes"]
-    }
+    "stripInternal": true,
+    "target": "ES2020"
   },
-  "include": ["./packages/*/src/*"]
-  // "exclude": ["./examples", "./test"]
+  "include": ["*.config.*", "scripts"]
 }
