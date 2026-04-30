@@ -1,5 +1,11 @@
 # @tanstack/react-start
 
+## 1.167.53
+
+### Patch Changes
+
+- fix exports for react-start so useServerFn is available with RSC ([#7292](https://github.com/TanStack/router/pull/7292))
+
 ## 1.167.52
 
 ### Patch Changes
